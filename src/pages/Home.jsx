@@ -194,63 +194,27 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      
+      {/* Themed Services Sectiont */}
+      <div className="mt-12 mx-auto w-[95%] max-w-8xl relative group">
+        {/* Hover Effect Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-[8px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-      {/* Themed Services Section */}
-      <div className="mt-12 mx-auto w-[95%] max-w-7xl relative group">
-        {/* Decorative blurred gradient blobs */}
-        <div className="pointer-events-none absolute -top-10 -left-10 w-60 h-60 bg-cyan-400/20 rounded-full blur-3xl z-0" />
-        <div className="pointer-events-none absolute -bottom-16 -right-16 w-72 h-72 bg-pink-400/20 rounded-full blur-3xl z-0" />
-
-        <section className="relative flex flex-col md:flex-row items-center shadow-2xl rounded-2xl overflow-hidden bg-white/95 backdrop-blur-lg border border-gray-100">
-          {/* Visual/Illustration */}
-          <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-br from-cyan-50 to-pink-50 py-12 px-6 md:px-0">
-            <div className="rounded-2xl bg-white/80 shadow-lg p-4 md:p-8 flex items-center justify-center">
-              <img
-                src={img1}
-                alt="MillenniumAi Services"
-                className="w-72 h-72 sm:w-96 sm:h-96 object-contain rounded-xl hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-          </div>
+        {/* Main Content Container */}
+        <section className="relative flex flex-col md:flex-row shadow-xl rounded-2xl overflow-hidden bg-gradient-to-br from-[#232046]/90 via-[#18122b]/90 to-[#2d234a]/90 backdrop-blur-md border border-[#2d234a]/40">
           {/* Text Content */}
-          <div className="w-full md:w-1/2 p-8 flex flex-col justify-center text-gray-800">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-pink-400 text-transparent bg-clip-text drop-shadow">
+          <div className="w-full md:w-1/2 p-8 flex flex-col justify-center text-white">
+            <h2 className="font-playfair text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-pink-400 text-transparent bg-clip-text drop-shadow">
               Empowering Innovation with AI & Full-Stack Development
             </h2>
-            <ul className="mb-6 text-slate-600 text-base sm:text-lg space-y-3">
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-2 h-2 rounded-full bg-cyan-400"></span>
-                <span>
-                  <span className="font-semibold text-cyan-600">
-                    AI-Powered Data Annotation:
-                  </span>
-                  &nbsp;Expert labeling for images, video, geospatial, and text
-                  data.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-2 h-2 rounded-full bg-pink-400"></span>
-                <span>
-                  <span className="font-semibold text-pink-600">
-                    Full-Stack Development:
-                  </span>
-                  &nbsp;Modern web, mobile, and gaming apps built for
-                  performance and scale.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 w-2 h-2 rounded-full bg-purple-400"></span>
-                <span>
-                  <span className="font-semibold text-purple-600">
-                    End-to-End Solutions:
-                  </span>
-                  &nbsp;From ideation to deployment, we handle every step with
-                  precision.
-                </span>
-              </li>
-            </ul>
-            <p className="mb-6 text-slate-600 text-base sm:text-lg">
+            <p className="mb-4 text-slate-200 text-base sm:text-lg">
+              MillenniumAi is one of the fastest-growing technology partners,
+              trusted by startups and enterprises alike. From intelligent data
+              annotation for AI models to cutting-edge website, mobile, and
+              gaming app development — we offer a complete suite of digital
+              services that transform ideas into reality.
+            </p>
+            <p className="mb-6 text-slate-200 text-base sm:text-lg">
               Our dual strength in artificial intelligence and software
               development enables us to deliver smart, scalable, and secure
               solutions. With a proven track record across industries, we are
@@ -262,6 +226,15 @@ const Home = () => {
                 Explore Our Services
               </button>
             </Link>
+          </div>
+          {/* Visual/Illustration */}
+          <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-br from-[#232046]/70 to-[#18122b]/80 py-10">
+            <img
+              src={img1}
+              alt="MillenniumAi Services"
+              className="w-72 h-72 sm:w-100 sm:h-100 object-contain rounded-xl hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
           </div>
         </section>
       </div>
