@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen bg-gradient-to-br from-white to-pink-50 via-cyan-50" >
+      <div className="flex flex-col min-h-screen bg-white" >
         <Navbar />
         <main className="">
           <Routes>
